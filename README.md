@@ -6,10 +6,10 @@ Internationalization of web applications with microservice architectures can lea
 
 Metaphrase aims to solve this problem while achieving the following:
 
-* Creates a single source of truth for translated strings associated standardized ISO 639 codes
-* Retrieves individual translations based on a key (usually the original language string) and ISO 639 code
-* Retrieves an entire lexicon for a specific language based on its ISO 639 code and an optional application domain
-* Retrieves missing strings and provides a list of all strings in need of translation retrievable by ISO 639 code
+* Creates a single source of truth for translated strings associated standardized ISO 639 and ISO 3166 codes (e.g. en, en-us)
+* Retrieves individual translations based on a key (usually the original language string) and ISO 639 and ISO 3166 code
+* Retrieves an entire lexicon for a specific language based on its ISO 639 and ISO 3166 code and an optional application domain
+* Retrieves missing strings and provides a list of all strings in need of translation retrievable by ISO 639 and ISO 3166 code
 * Provides a way to introduce new strings in a specified language
 * Allows for editing of existing strings and insertion of translated values in new languages
 * Synchronizes with one or more remote Metaphrase servers to allow the process of translation to take place across multiple environments (e.g. development, staging, production)
