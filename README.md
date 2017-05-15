@@ -15,7 +15,6 @@ Metaphrase aims to solve this problem while achieving the following:
 * Synchronizes with one or more remote Metaphrase servers to allow the process of translation to take place across multiple environments (e.g. development, staging, production)
 
 ## Best Practices
-Whenever possible store phrases or longer parts of copy rather than individual strings
 
 |Do | Don't |
 |---|-------|
