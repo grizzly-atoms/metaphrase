@@ -1,17 +1,17 @@
 require 'rails_helper'
 
-RSpec.describe 'Translations API', type: :request do
+describe 'Translations API', type: :request do
   # initialize test data
   let!(:translations) { create_list(:translation, 10) }
   let(:translation_id) { translations.first.id }
   let(:copy) { "Travel is fatal to prejudice, bigotry, and narrow-mindedness, and many of our people need it sorely on these accounts. Broad, wholesome, charitable views of men and things cannot be acquired by vegetating in one little corner of the earth all one's lifetime." }
 
-  # Test suite for GET /todos
+  # Test suite for GET /translations
   describe 'GET /translations' do
     # make HTTP get request before each example
     before { get '/translations' }
 
-    it 'returns todos' do
+    it 'returns translations' do
       # Note `json` is a custom helper to parse JSON responses
       expect(json).not_to be_empty
       expect(json.size).to eq(10)
